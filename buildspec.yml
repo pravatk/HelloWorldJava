@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket codepipeline-us-east-1-394925491571 --output-template-file HelloWorldSAMTemplate.yaml
+      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket lambda-deployment-code --output-template-file HelloWorldSAMTemplate.yaml
 artifacts:
   types: zip
   files:

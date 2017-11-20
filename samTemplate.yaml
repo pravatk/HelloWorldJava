@@ -7,4 +7,4 @@ Resources:
                 Properties:
                         Handler: com.amazonaws.lambda.demo.LambdaFunctionHandler::handleRequest
                         Runtime: java8
-                        CodeUri: ./target/demo-1.0.0.jar
+                        CodeUri: target/demo-1.0.0.jar
